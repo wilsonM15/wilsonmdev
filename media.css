@@ -1,0 +1,131 @@
+/*============@MEDIA===============*/
+
+/*@media (max-width: 1200px) {
+    html {
+        font-size: 4%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: ;
+    }
+     
+    section {
+        padding: ;
+    }
+
+    .services-container {
+        
+
+    }
+
+}
+
+*/
+@media (max-width: 400px) {
+    html {
+        font-size: 4%;
+    }
+
+    .name {
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+
+    .nav li a {
+        font-size: 1rem;
+    }
+
+    .nav li a:hover {
+        font-size: 1.1rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+   
+
+/*-----------------ABOUT----------------*/
+
+.about p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 1rem 0.5rem 1rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+
+    .about-services{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-size-adjust: 1rem;
+        padding: 1rem 1rem 1rem;
+        text-align: center;
+        transition: .5s ease;
+        background:rgb(226, 222, 222);
+        border: .2rem solid var(--bg-color);
+        overflow: auto !important;
+      
+    }
+
+/*------------------PROJECT CONTAINER----------------*/
+
+
+.projects h2{
+    padding-top: -5rem;
+}
+
+.projects-box-text h3 a{
+    font-size: 2rem;
+}
+
+/*--------------CONTACT SECTION DESIGN--------------*/
+
+.contact h2 {
+    font-size: 2.5rem;
+    padding-top: 9rem;
+    color: rgb(235, 228, 228);
+
+}
+
+
+
+/*----------------FOOTER------------------------------------------------+ */
+
+.footer-text p{
+    font-size: .7rem;
+    margin-top: 3rem;
+    text-align: justify;
+}
+    
+}
+
+
+
+/*
+    .services-container .services-box{
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem 1rem 0;
+        
+        
+    }
+   
+    .project-container {
+        padding: 2rem;
+        min-height: 100dvh;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
