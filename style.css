@@ -65,7 +65,14 @@ h3 {
     padding-bottom: 50;
 }
 
-
+.meaning {
+    font-size: 2rem;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    margin: 60% -10% -0% -15%;
+   
+}
   
 /* -------Button------------------ */
 
