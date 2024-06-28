@@ -4,7 +4,7 @@
 
 /* View work button */
 document.getElementById("arrow-button").addEventListener("click", function () {
-       window.scrollTo(0,600);
+       window.scrollTo(0,1500);
     });
  
 /*================================SCROLL REVEAL=================================== */

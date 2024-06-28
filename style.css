@@ -209,7 +209,7 @@ ul {
 
 /*----------- About ======================= */
 .about-services{
-    background-color: rgb(226, 222, 222) ;
+    background-color: rgb(248, 242, 242) ;
     min-height: 100dvh;
     min-width: 100%;
     padding-bottom: 50rem;
@@ -267,7 +267,7 @@ h2 span{
 
 .services-container .services-box{
     flex: 1 1 20rem;
-    background:rgb(226, 222, 222);
+    background:rgb(248, 242, 242);
     padding: 1rem 1rem 3rem;
     border-radius: 2rem;
     text-align: center;

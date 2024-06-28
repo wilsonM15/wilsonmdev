@@ -81,7 +81,7 @@ h2{
         padding: 1rem 1rem 1rem;
         text-align: center;
         transition: .5s ease;
-        background:rgb(226, 222, 222);
+        background:rgb(248, 242, 242);
         border: .2rem solid var(--bg-color);
         overflow: auto !important;
       
