@@ -47,11 +47,11 @@
     }
 
     .name{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .profession{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
         padding-left: -2rem;
         font-weight: bold;
@@ -65,9 +65,7 @@
   
     }
 
-    #arrow-button{
-        font-size: 1.0rem;
-    }
+    
 /*-----------------ABOUT----------------*/
 
 .about p{
