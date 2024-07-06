@@ -45,7 +45,7 @@ section {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--text-color);
     text-align: center;
@@ -56,8 +56,8 @@ h1 {
 }
 
 h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: bold;
     color: var(--text-color);
     text-align: center;
     color: aliceblue;
@@ -67,11 +67,12 @@ h3 {
 
 .meaning {
     font-family: "poppins";
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight:bold;
     color: aliceblue;
     text-align: center;
-    margin-top: 5%;
+    padding-top: 22rem;
+    text-transform:capitalize;
    
 }
   
@@ -93,7 +94,7 @@ button{
     font-weight: bold;
     cursor: pointer;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-width: 2%;
     border-style: solid;
     

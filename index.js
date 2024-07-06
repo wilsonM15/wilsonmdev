@@ -4,7 +4,7 @@
 
 /* View work button */
 document.getElementById("arrow-button").addEventListener("click", function () {
-       window.scrollTo(0,1500);
+       window.scrollTo(0,1650);
     });
  
 /*================================SCROLL REVEAL=================================== */
@@ -15,9 +15,9 @@ ScrollReveal({
     });
     
     ScrollReveal().reveal('.about, .profession, .left-animation, .footer-text', {origin: 'left'});
-    ScrollReveal().reveal('.services-container, .right-animation, .meaning', {origin: 'right'});
+    ScrollReveal().reveal('.services-container, .right-animation ', {origin: 'right'});
     ScrollReveal().reveal('.projects, .heading, .About-Me', {origin: 'top'});
-    ScrollReveal().reveal('.contact-box', {origin: 'bottom'});
+    ScrollReveal().reveal('.contact-box, .meaning', {origin: 'bottom'});
 
 
 /*------   typed JS --------------------------------*/

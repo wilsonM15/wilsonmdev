@@ -38,6 +38,7 @@
 
     .nav li a {
         font-size: 1rem;
+        padding-right: 3rem;
         text-align: center;
     }
 
@@ -45,18 +46,27 @@
         font-size: 1.1rem;
     }
 
-    h1{
-        font-size: 1.1rem;
+    .name{
+        font-size: 1.4rem;
     }
 
-    h3{
-        font-size: 1.4rem;
+    .profession{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: -2rem;
+        font-weight: bold;
     }
    
     .meaning{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: -5rem;
+  
+    }
 
-        margin-top: 15%;
+    #arrow-button{
+        font-size: 1.0rem;
     }
 /*-----------------ABOUT----------------*/
 
@@ -91,11 +101,11 @@ h2{
 
 
 .projects h2{
-    padding-top: -5rem;
+    padding-top: 9rem;
 }
 
 .projects-box-text h3 a{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /*--------------CONTACT SECTION DESIGN--------------*/
