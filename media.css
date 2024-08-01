@@ -89,23 +89,33 @@ h2{
         padding: 1rem 1rem 1rem;
         text-align: center;
         transition: .5s ease;
-        background:rgb(248, 242, 242);
+        background:rgb(255, 255, 255);
         border: .2rem solid var(--bg-color);
-        overflow: auto !important;
+        position: relative;
+
       
     }
 
 /*------------------PROJECT CONTAINER----------------*/
 
-
+.work-container{
+    position: relative;
+}
 .projects h2{
-    margin-top: -15rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .projects-box-text h3 a{
-    font-size: 3rem;
+    font-size: 2rem;
+    background-color: aqua;
+
 }
 
+.right-animation h3 a{
+   top: 6rem;
+}
 /*--------------CONTACT SECTION DESIGN--------------*/
 
 .contact h2 {

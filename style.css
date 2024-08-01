@@ -186,7 +186,7 @@ ul {
 .nav li a{
     cursor: pointer;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.2rem;
     display: block;
@@ -210,10 +210,11 @@ ul {
 
 /*----------- About ======================= */
 .about-services{
-    background-color: rgb(248, 242, 242) ;
-    min-height: 100dvh;
-    min-width: 100%;
+    background-color: rgb(255, 255, 255) ;
+    height: auto;
+    max-width: 100dvh;
     padding-bottom: 50rem;
+    overflow: hidden;
 }
 
 .about {
@@ -263,12 +264,14 @@ h2 span{
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 8rem;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
     
 }
 
 .services-container .services-box{
     flex: 1 1 20rem;
-    background:rgb(248, 242, 242);
+    background:rgb(255, 255, 255);
     padding: 1rem 1rem 3rem;
     border-radius: 2rem;
     text-align: center;
@@ -303,6 +306,7 @@ h2 span{
     margin: 1rem 0 2rem; 
     text-align: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -313,7 +317,7 @@ h2 span{
 
 .work-container{
     background-color: rgb(21, 28, 63);
-    min-height: 100dvh;
+    max-height: 100dvh;
 }
 
 .projects h2{
@@ -321,14 +325,14 @@ h2 span{
     font-size: 2.5rem;
     font-weight: 500;
     color: aliceblue;
-    top: 5rem;
+    top: 1rem;
     text-align: center;
-    padding-top: 15rem;
-    margin-top: 0%;
+    padding-top: 1rem;
+    margin-top: 0rem;
     
 }
 .projects-box-text{
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .projects-box-text h3 a {
@@ -339,7 +343,7 @@ h2 span{
 }
 
 .projects-box-text h4{
-    font-family: poppins;
+    font-family: "poppins";
     font-size: .9rem;
     font-weight: bold;
     text-align: center;
