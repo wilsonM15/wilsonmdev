@@ -1,1563 +1,510 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'montserrat', 'inter', 'poppins'; 
-
-}
-
-html{
-    overflow-x: hidden;
-    width: auto;
-    scroll-behavior: smooth;
-    background-color: var(--background-color);
-    font-size: 62.5%;
-    color: var(--primary-color);
-}
-
-
-body{
-    overflow: hidden;
-}
-:root{
-    --background-color: #01231f;
-    --primary-color: white;
-    --secondary-color: pink;
-    --tertiary-color: rgb(196, 11, 11);
-    --quaternary-color: black;
+    font-family: poppins;
     
 }
+
+:root {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
 
 section {
-    min-height: 100dvh;
-    width: 100%;
-    padding: 10rem 9% 2rem;
-    
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 1rem;   
 }
 
-  
-
-
-/*--------------------------NAV-------------------------------------*/
-
-/*.home-section{
-    
-}*/
-/*------------Dropdown---------------*/
-
-.dropdown {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    right: 0;
-    top: 2rem;
+.header {
     display: inline-block;
-    width: 4rem;
-    height: 2rem;
-    align-items: right;
-    cursor: pointer;
-
+    background-color: rgb(21, 28, 63);
+    padding: 20rem 20% 2rem;
+    min-width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    min-height: 100vh;
 }
 
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f6f6;
-    width: 10rem;
-    box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-    z-index: 1;
-    border-radius: 1rem;
-    margin: 0rem -0rem 0rem -6.1rem;
+.multiple-text{
+    color: rgb(13, 197, 238);
 }
 
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
     text-align: center;
-    border-radius: 2rem;
+    margin: 0%;
+    color: aliceblue;
+    padding-top: 15rem; ;
+
 }
 
-
-.dropdown-content a:hover {background-color: #ffffff}
-.dropdown:hover .dropdown-content {
-    display: block;
+h3 {
+    font-size: 3.5rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    border-radius: 1rem;
-    
-}
-
-
-.dropdown-content a:hover{
- color: var(--background-color);
- text-decoration: underline;
- text-transform: capitalize;
- font-weight: bold;
-
-}
-
-
-.dropdown:hover .dropbtn {
-    background-color: transparent
-}
-.dropbtn{
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    font-size: 6px;
-    border: none;
-    cursor: pointer;
-}
-
-/*------------------------------LOGO---------------------------*/
-
-.logo {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:var(--background-color);
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 1rem;
-    max-height: 5rem;
-}
-
-.logo h1 {
-    margin: -9rem -2rem;
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    font-family: "Rye";
-}
-
-
-
-/*---------------------------TITLE&IMAGES------------------------*/
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-
-.main-title {
-    text-align: center; 
-    font-size: 6.5rem;
-    width: 30rem;
-    font-weight: bold;
-    font-family: "Staatliches";
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    -webkit-animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-            @-webkit-keyframes scale-up-center {
-                0% {
-                  -webkit-transform: scale(0.5);
-                          transform: scale(0.5);
-                }
-                100% {
-                  -webkit-transform: scale(1);
-                          transform: scale(1);
-                }
-              }
-              @keyframes scale-up-center {
-                0% {
-                  -webkit-transform: scale(0.5);
-                          transform: scale(0.5);
-                }
-                100% {
-                  -webkit-transform: scale(1);
-                          transform: scale(1);
-                }
-}
-                    
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.images img {
-    position: relative;
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-}
-
-#image1{
-    margin-top: -25rem;
-    margin-left: 26rem;
-    z-index: -1;
-    width: 170px;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-    overflow: hidden;
-    
-}
-
-#image2{
-    margin-top: -4.3rem;
-    margin-left: 29rem;
-    z-index: -1;
-    width: 140px;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-    overflow: hidden;
-}
-
-#image3{
-    margin-top: -15rem;
-    margin-right: 27rem;
-    z-index: -1;
-    width: 150px;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-    overflow: hidden;
-}
-
-
-#image4{
-    margin-top: -38rem;
-    margin-right: 23rem;
-    z-index: -1;
-    width: 160px;
-    height: 150px   ;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-    overflow: hidden;
-}
-
-#image5{
-    visibility: hidden;
-}
-
-
-
-/* ===========================SOCIAL MEDIA======================================*/
-/*-------------desktop-------------*/
-/*.follow-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-.follow-us .title {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    margin-bottom: 20px;
-    font-size: 1.5em;
+    color: var(--text-color);
     text-align: center;
+    color: aliceblue;
+    margin-left: 0%;
+    padding-bottom: 50;
 }
 
-.follow-us img {
-    width: 40px;
-    height: 40px;
-    margin: 10px 0;
-    cursor: pointer;
-}
-*/
-
-
-/* =============================maple leaf=========================*/
-
-
-.maple-leaf{
-    text-align: center;
-    font-size: 4rem;
-    color: red;
-    margin-top: -10rem;
-    margin-left: 0rem;
-}
-
-.explore {
-    text-align: center;
-    font-size: 1.2em;
-    margin-left: 0rem;
-  
-}
-
-.arrow-down {
-    margin-top: .5rem;
-    font-size: 2rem;
-
-}
-
-.arrow-down:before {
-    content: '';
-    display: block;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    width: 15px;
-    height: 15px;
-    transform: rotate(45deg);
-    position: absolute;
-    left: 48%;
-}
-
-
-
-
-
-/*-------------OPENING TIMES--------------------*/
-
-.time-open{
-    padding: 1rem 1rem 1rem 1rem;
-    margin-top: 10rem;
-    margin-bottom: 20rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.container-square{
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    width: 30rem;
-    height: 40rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-
-
-
-}
-.opening-times {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.opening{
-    text-align: center;
-    font-size: 4.5rem;
-    width: 30rem;
-    font-weight: bold;
-    font-family: "Staatliches";
-    color: rgb(6, 6, 6);
-    padding: 2rem;
-
-}
-
-.hours{
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 1.7rem;
-    width: 30rem;
-    font-family: "Staatliches";
-    color: rgb(6, 6, 6);
-    padding: 2rem;
-}
-
-#time-changes{
-    text-align: center;
-    margin-top: 10rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: "Staatliches";
-    color: rgb(6, 6, 6);
-}
-
-
-
-
-/*----------------------6 SQUARES------------------------*/
-
-.squares{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: -35rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-   
-
-}
-.image-pair {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10rem 0rem 0rem 0rem;
-}
-
-.image-pair img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.poutine-img{
-    object-fit: cover;
-    margin-top: -25rem;
-    border-radius: 1rem;
-    box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-
-}
-
-#poutine{
-    text-align: center;
-    font-size: 1.1rem;
+.meaning {
     font-family: "poppins";
-    color: var(--primary-color);
-    padding: 1rem 10rem 1rem 10rem;
-    margin-top: 0rem;
+    font-size: 2.2rem;
+    font-weight:bold;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 22rem;
+    text-transform:capitalize;
+   
+}
+  
+/* -------Button------------------ */
+
+button{
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+#arrow-button {
+    display: flex;
+    background-color: rgb(21, 28, 63);
+    color: white;
+    padding: 11px 15px;
+    border-radius: 5px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.5rem;
+    border-width: 2%;
+    border-style: solid;
+    
+
+}
+
+#arrow-button > .arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid rgb(251, 250, 250);
+    border-bottom: 2px solid white;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+   
+}
+
+#arrow-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+
+#arrow-button:hover > .arrow {
+    transform: rotate(45deg);
+    translate: (4px, 4px);
+    border-color: text-hover-color;
+   
+}
+
+#arrow-button:hover > .arrow::before {
+    opacity: 1;
+    width: 8px;
+    transform: rotate('45deg');
+}
+
+#arrow-button:hover{
+    background-color: rgb(13, 197, 238);
+    color: rgb(255, 255, 255);
+}
+
+
+/*  ============== NAVIGATION ================== */
+
+
+.navbar .nav{
+    background-color: rgb(3, 3, 51);
+    min-width: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 0 1%;
+    position: fixed;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+    
+}
+
+
+ul {
+    display: flex;
+    font-size: 1.4rem;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content:space-evenly;
+    color: aliceblue;
+    font-weight: 500;
+    padding: 0;
+
+}
+
+.nav li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: all.5s ease;
+
+}
+
+.nav li a:hover{
+    font-size: 1.5rem;
+    color: rgb(13, 197, 238);
+    /*box-sizing: border-box;*/
+    /*background-color: whitesmoke;*/
+    /*padding: .1rem .1rem;*/
+    /*border-radius: .3rem;*/
+    transition: all.4s ease;
+}
+
+/*----------- About ======================= */
+.about-services{
+    background-color: rgb(248, 242, 242) ;
+    min-height: 100dvh;
+    min-width: 100%;
+    padding-bottom: 50rem;
+}
+
+.about {
+    align-items: center;
+    min-width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+   
+}
+
+h2{
+    font-family: "Nunito", "Helvetica";
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    color: black;
+    padding-top: 10rem;
+    margin: 3rem 0rem;
+}
+
+h2 span{
+    color: rgb(13, 197, 238);
+}
+
+.about p{
+   font-family: "poppins";
+   font-size: 1.5rem;
+   font-weight: 300;
+   color: rgb(3, 3, 3);
+   text-align:justify;
+   justify-self: flex-end;
+   margin: 1rem 6rem;
+   padding-top: 1rem;
+   line-height: 1.5;
+}
+
+
+
+/* ------------ Services ==================== */
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 8rem;
+    
+}
+
+.services-container .services-box{
+    flex: 1 1 20rem;
+    background:rgb(248, 242, 242);
+    padding: 1rem 1rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    margin: -2rem 1rem 0;
+    overflow: hidden;
+    
+
+}
+
+.services-container .services-box:hover{
+    border-color: rgb(233, 233, 240);
+    transform: scale(1.03);
+}
+
+.services-box i {
+    font-size: 5rem;
+    color: rgb(13, 197, 238);
     margin-bottom: 2rem;
 }
 
-
-.pink-square{
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-#neon-text {
-    position: relative;
-    font-size: 3rem;
-    text-align: center;
-    background-image: linear-gradient(90deg, #112402, #8fb093, #0c4215);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: neonGlow 5s linear infinite;
-    margin-top: -14rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    font-family: "poppins";
-    
-}
-
-@keyframes neonGlow {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
-
-.solo-pool-table{
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#pool-table{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "poppins";
-    color: var(--primary-color);
-    padding: 1rem 0rem 0rem 0rem;
-    margin-bottom: 5rem;
-    
-}
-
-.friends{
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-}
-
-#family-friendly{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    padding: 1rem 0rem 0rem 0rem; 
-    
-}
-
-#family-friendly-subtext{
-    text-align: center;
-    font-size: .7rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    padding: .5rem 0rem 0rem 0rem; 
-  
-}
-
-
-.canada-day{
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: -12rem;
-}
-
-#canada-day{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "inter";
-    color: var(--primary-color); 
-    padding: 1rem 0rem 0rem 0rem;
-    
-}
-
-.sports-w-friends{
-    margin-top: 6rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-}
-
-
-#sports-w-friends{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "poppins";
-    color: var(--primary-color); 
-    padding: 1rem 10rem 0rem 10rem;
-}
-
-
-
-/*------------------------ABOUT US----------------*/
-
-.about-us-container{
-    color: var(--primary-color);
-    text-align: center;
-    padding: 5rem 2rem 0rem 2rem;
-    margin-top: 10rem;
-    border-radius: 10px;
-}
-
-.about-us{
-    text-align: center;
-    font-size: 2rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    padding: 2rem;
-}
-
-.about-us-text{
+.services-box h3{
+    font-weight: 600;
     font-size: 1.5rem;
-    font-family: "poppins";
-    color: var(--primary-color);
-    padding: 1rem 2rem 0rem 2rem;
-    text-align:justify;
-    width: 35rem;
-    margin: 0 auto;
+    color: rgb(15, 79, 135);
+
+}
+
+.services-box p{
+    font-size: 1.4rem;
+    margin: 1rem 0 2rem; 
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/*  ------------WORK/PROJECTS-------------*/
+
+
+
+.work-container{
+    background-color: rgb(21, 28, 63);
+    min-height: 100dvh;
+}
+
+.projects h2{
+    font-family: "Nunito";
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: aliceblue;
+    top: 5rem;
+    text-align: center;
+    padding-top: 15rem;
+    margin-top: 0%;
+    
+}
+.projects-box-text{
     margin-top: 5rem;
+}
 
+.projects-box-text h3 a {
+    font-family: "poppins";
+    font-size: 5rem;
+    color: rgb(13, 197, 238);
+    font-weight: 300;
+}
+
+.projects-box-text h4{
+    font-family: poppins;
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(251, 247, 247);
+    
+}
+
+.projects-container .projects-box-text h3:hover{
+    border-color: rgb(233, 233, 240);
+    transform: scale(1.03);
 }
 
 
 
-.all-staff{
-    width: 340px;
-    height: 250px;
-    object-fit: cover;
-    margin: 4rem 0rem;
-    border-radius: 1.5rem;
-    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
+
+/*--------------CONTACT SECTION DESIGN--------------*/
+.contact{
+    height: 100dvh;
+    min-width: 100%;
+    background-color: rgb(23, 38, 69); 
+    margin-top: -3rem;
+    margin-bottom: -5rem;
+    
+}
+
+.contact h2 {
+    font-family: Nunito;
+    font-size: 2.5rem;
+    padding-top: 15rem;
+    color: rgb(235, 228, 228);
+
+}
+.contact h2 span{
+    color: rgb(13, 197, 238);
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: rgb(5, 5, 5) 1px solid; 
+    border-radius: .4rem;
     padding: 1rem;
-}
-
-
-
-
-/* =============================OUR MENU====================================*/
-
-.menu-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 2rem 0rem 2rem;
-    margin: 2rem 0rem;
-}
-
-.our-menu{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "inter";
-    text-align: center;
-    margin-top: -10rem;
-    
-}
-
-
-
-#text-menu{
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-top: -17rem;
-    padding: 1rem 2rem 0rem 2rem;
-    font-family: "poppins";
-    text-align: justify;
-    width: 36rem;
-}
-
-#subtext-menu{
-    font-size: 1.5rem;
-    font-family: "poppins";
-    color: var(--primary-color);
-    margin-top: -25rem;
-    padding: 5rem 2rem 0rem 2rem;
-    text-align:justify;
-    width: 36rem;
-    
-}
-
-.menu-button{
-    width: 12rem;
-    height: 6rem;
-    object-fit: cover;
-    margin-top: -10rem;
-    border-radius: 1rem;
-    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
-    background-color: pink;
-}
-
-.menu-button:hover{
-    transform: scale(1.1);
-    background-color: var(--primary-color);
-    color: pink;
-}
-
-.menu-button a{
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: color 0.3s ease;
-    font-size: 1.5rem;
-}
-
-.menu-button a:hover{
-    color: var(--secondary-color);
-    font-size: 1.7rem;
-}
-/*------------------------sub-section-menu----------------------*/
-
-/*---------------------
-.sub-section-menu{
-   
-}
-
-.starter-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 2rem 0rem 2rem;
-    padding: 2rem 2rem;
-    right: 45%;
-}
-
-.starters{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
-.item{
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    font-family: "inter";
-    text-align: center;
-    line-height: 3rem;
-}
-
-
-.burgers-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 1rem 0rem 5rem;
-    padding: 2rem 2rem;
-    left: 39%;
-}
-
-.burgers{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
-.sandwiches-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 25rem 2rem 0rem 2rem;
-    padding: 2rem 2rem;
-    right: 39%;
-}
-
-.sandwiches{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
-.beverages-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 25rem 2rem 0rem 1rem;
-    padding: 2rem 2rem;
-    left: 45%;
-}
-
-.beverages{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
---------------------*/
-
-/* ==========================SPORTS SECTION=======================================*/
-
-.sports-section{
-    margin: 2rem 0rem;
-    padding: 5rem 2rem 0rem 2rem;
-}
-
-.sports{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
-    font-size: 7rem;
-    font-family: "inter";
-}
-
-.subtext-sports{
-    text-align: right;
-    font-size: 2rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    padding: 1rem 0rem;
-    letter-spacing: .9px;
-    text-transform: capitalize;
-}
-
-
-.text-sports{
-    text-align: left;
-    font-size: 1.5rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    margin-top: 12rem;
-    letter-spacing: .9px;
-    padding: 1rem 2rem 0rem 2rem;
-}
-
-.text-calendar{
-    text-align: left;
-    font-size: 1.2rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    margin-top: 20rem;
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    -webkit-animation: blink-1 0.6s both;
-    animation: blink-1 0.6s both;
-    }
-
-
-    @-webkit-keyframes blink-1 {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
-        }
-        25%,
-        75% {
-          opacity: 0;
-        }
-      }
-      @keyframes blink-1 {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
-        }
-        25%,
-        75% {
-          opacity: 0;
-        }
-      }
-      
-.text-calendar a{
-    color: var(--primary-color);
-    text-decoration: none;
-}
-.text-calendar::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--secondary-color);
-    margin: 1rem 0rem;
-}
-
-.text-calendar a:hover{
-    color: var(--secondary-color);
-}
-
-
-
-
-/*------------------------RESERVATIONS SECTION-----------------*/
-
-
-.reservations-section{
-    align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.reservations{
-   text-align: center;
-   font-size: 2rem;
-   font-family: "inter";
-   padding: 1rem;
-   color: var(--primary-color);
-
-}
-
-.subtext-reservations{
-    text-align: justify;
-    width: 36rem;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-family: "poppins";
-    color: var(--primary-color);
-    padding: 1rem 2rem 0rem 2rem;
-    
-
-}
-
-.reservations-image{
-    display: inline-block;
-    width: 20rem;
-    height: 30rem;
-    object-fit: cover;
-    margin: 2rem 1rem;
-    border-radius: 2rem;
-    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-   
-}
-
-.event-reservations{
-    display: flex;
-    width: 12rem;
-    height: 5rem;
-    font-size: 1.2rem;
-    font-family: "Inter";
-    color: var(--primary-color);
-    text-align: center;
-    align-items: center;
-    border-radius: 2rem;
-    background-color: var(--primary-color);
-    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
-    padding: 2rem 2rem;
-    margin-left: 23rem;
-    margin-top: -25rem;
-}
-
-.event-reservations:hover{
-    transform: scale(1.1);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-.event-reservations a:hover{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.event-reservations a{
-    color: var(--quaternary-color);
-    text-decoration: none;
-}
-
-
-
-.table-reservations{
-    display: inline-flex;
-    font-size: 1.4rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 12rem;
-    height: 5rem;
-    border-radius: 2rem;
-    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
-    padding: 2rem 2rem 2rem;
-    margin: 5rem 2rem 2rem 23rem; 
-    color: #01231f;
-    background-color: var(--primary-color);
-}
-
-.table-reservations:hover{
-    transform: scale(1.1);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-
-}
-
-.table-reservations a:hover{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.table-reservations a{
-    color: var(--quaternary-color);
-    text-decoration: none;
-}
-
-
-
-
-/*-------------FOOTER DESIGN------------*/
-.footer-section{
-    background-color:black;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    margin: 2rem 1rem;
-    margin-right: 0rem ;
-    margin-left: 0rem;
-    width: 100dvh;
-    min-height: 10dvh;
-}
-
-
-.links-container{
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 2rem;
-}
-
-#quick-links{
-    font-size: 1.5rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    color: var(--primary-color);
-}
-
-.links ul{
-    text-align: left;
-    padding-top: 1rem;
-    font-size: 1.2rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    list-style-type: none;
-    text-decoration: none;
-
-}
-
-.links li a{
-    color: var(--primary-color);
-}
-
-.links li a:hover{
-    color: var(--secondary-color);
-}
-
-/*-------------
-.explore-container{
-    display: block;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 2rem 2rem;
-    margin-left: 18rem;
-    margin-top: -14rem;
-}
-
-
-#explore{
-    font-size: 1.5rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    color: var(--primary-color);
-}
-
-.explore-our-world{
-    padding-top: 1rem;
-    font-size: 1.2rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-}
-
-.explore-our-world ul{
-    text-transform: capitalize;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.explore-our-world li a{
-    color: var(--primary-color);
-    text-align: left;
-
-}
-
---------------------_*/
-
-
-.contact-container{
-    display: block;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 2rem 2rem;
-    margin-left: 18rem;
-    margin-top: -14rem;
-}
-
-
-#contact{
-    font-size: 1.5rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    color: var(--primary-color);
     margin-bottom: 1rem;
+    background-color:rgb(255, 255, 255);
+    
 }
 
-.contact-us ul{
-    list-style-type: none;
+.contact form.input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    border: rgb(5, 5, 5) 1px solid;
+
 }
 
-.contact-us li a{
-    color: var(--primary-color);
+.contact form .input-box input{
+    width: 45%;
+}
+
+
+.contact form textarea{
+    resize:none;
+
+}
+
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: rgb(13, 197, 238);
+    border-radius: 5px;
+    border: rgb(5, 5, 5) 1px solid;
+    padding: 1rem 2rem;
+}
+
+.contact form .btn:hover{
+    background-color: rgb(13, 197, 238);
+    color: rgb(255, 255, 255);
+    transition: .5s ease;
+    transform: scale(1.03);
+}
+
+/*==============FOOTER DESIGN==========================*/
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: rgb(21, 28, 63);
+}
+
+.footer-text p{
+    color: whitesmoke;
     font-size: 1.2rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    transition: color 0.3s;
-    display: inline-block;
-    margin-bottom: .5rem;
-    &:hover{
-        color: var(--secondary-color);
-    }
+    justify-content: center;
+    
 }
 
-
-.footer{
-    font-size: .9rem;
-    font-family: "Inter";
-    letter-spacing: .9px;
-    text-transform: capitalize;
-    color: var(--primary-color);
-    margin-top: 4rem;
+.footer-iconTop{
+    display: inline-flex;
+    justify-content: right;
+    align-items: right;
+    padding: 1rem .2rem;
+    background-color: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
 }
 
-.footer a{
-    color: var(--primary-color);
-    font-size: .9rem;
-
-
+.footer-iconTop a:hover{
+    transform: scale(1.4);
+    cursor: pointer;
 }
 
-.footer p{
-    font-size: .6rem;
-    font-family: "Inter";
-    padding-left: 1rem;
-    padding-right: 2rem;
-}
-
-.footer a:hover{
-    color: rgb(14, 62, 146);
+.footer-iconTop a i{
+    font-size: 2.5rem;
+    color: aliceblue;
 }
 
 
 
+/*============@MEDIA===============*/
 
+/*@media (max-width: 1200px) {
+    html {
+        font-size: 4%;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-
-    .logo h1{
-        font-size: 2rem;
-        margin-left: -7rem;
+@media (max-width: 991px) {
+    .header {
+        padding: ;
+    }
+     
+    section {
+        padding: ;
     }
 
-    .dropbtn{
-        font-size: 2rem;
-        zoom: 2;
-        margin-left: -3rem;
-
-    }
-    
-    .dropdown-content{
-        width: 25rem;
-        height: 25rem;
-        margin-left: -22rem;
-    }
-
-
-    .dropdown-content a{
-        font-size: 2.5rem;
-    }
-
-
-
-
-    .main-title{
-        font-size: 15rem;
-        width: 70rem;
-        margin-top: 11rem;
-    }
-
-
-
-   /* .images img{
-        width: 75rem;
-        height: 30rem;
-    }*/
-
-    #image1{
-        width: 30rem;
-        height: 25rem;
-        margin-left: 85rem;
-        margin-top: -52rem;
-    }
-
-    #image2{
-
-        width: 30rem;
-        height: 25rem;
-        margin-left: 50rem;
-        margin-top: -11rem;
-    }
-
-    #image3{
-        position: absolute;
-        width: 30rem;
-        height: 25rem;
-        margin-right: 70rem;
-        margin-top: -20rem;
-    }
-
-
-    #image4{
-        position: absolute;
-        width: 30rem;
-        height: 25rem;
-        margin-left: 30rem;
-        margin-top: -74rem;
-    }
-
-    #image5{
-        position: absolute;
-        content: url('bar-beer.jpg');
-        width: 30rem;
-        height: 25rem;
-        visibility: visible;
-        margin-left: -75rem;
-        margin-top: -60rem;
-        border-radius: 1rem;
-        border-radius: 5px;
-        box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-        overflow: hidden;
-
-
-
-
-    }
-
-
-
-
-    .maple-leaf{
-        font-size: 10rem;
-    }
-   
-    .explore{
-        font-size: 3rem;
-    }
-
-    .arrow-down:before{
-        width: 3rem;
-        height: 3rem;
-        left: 48.5%;
-    }
-
-
-    .container-square{
-        margin-top: 20rem;
-        width: 60rem;
-        height: 70rem;
-        border-radius: 2%;
-        box-shadow: 0px 8px 16px 0px rgba(8, 7, 7, 0.2);
-
-    }
-
-    .opening{
-        font-size: 6.5rem;
-        width: 45rem;
-        margin-top: 5rem;
-
-
-    }
-
-    .hours{
-        font-size: 3.5rem;
-        margin-top: 9rem;
-        width: 65rem;
-    }
-
-
-    #time-changes{
-        font-size: 3.5rem;
-        margin-top: 12rem;
-    }
-
-
-    .squares{
-        padding: 2rem;
-       
+    .services-container {
         
-    }
-    
-    .image-pair{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 660px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .image-pair img{
-       /* width: calc(33.33% - 20px);*/
-        width: 40rem;
-        height: 25rem;
-        object-fit: cover;
-        margin-bottom: 20px;
-        text-align: center;
-        display: block;
-
-        
-    }
-
-
-    .poutine-img{
-        position: absolute;
-        margin-left: -40rem;
-        margin-top: -20rem;
-    }
-
-    #poutine{
-        margin-top: 18rem;
-        margin-left: -25rem;
-        font-size: 2rem;
-        padding-left: 25rem;
-        padding-right: 40rem;
-       
-    }
-
-
-    .pink-square{
-        position: absolute;
-        margin-top: -20rem;
-        margin-left: 45rem;
-    }
-
-    #neon-text{
-        position: absolute;
-        font-size: 3.5rem;
-        text-shadow: 2px 2px 4px rgba(255, 0, 255, 0.5);
-        padding-left: 65rem;
-        padding-right: 30rem;
-        margin-top: -23rem;
-        margin-right: -10rem;
-    }
-
-    .solo-pool-table{
-        position: absolute;
-        margin-left: -40rem;
-        margin-top: -10rem;
 
     }
 
-    #pool-table{
-        position: absolute;
-        font-size: 2rem;
-        margin-left: -40rem;
-        padding-top: 22rem;
+}
 
-    }
-
-    .friends{
-        position: absolute;
-        margin-top: -10rem;
-        margin-left: 45rem;
-    }
-
-    #family-friendly{
-        font-size: 2rem;
-        margin-top: 25rem;
-        margin-left: 35rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        width: 40rem;
-    }
-
-    #family-friendly-subtext{
-        font-size: 1.8rem;
-        margin-top: 0rem;
-        margin-left: 35rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        width: 40rem;
-    }
-
-
-    .canada-day{
-        position: absolute;
-        margin-top: -10rem;
-        margin-left: 45rem;
-       
-    }
-
-    .sports-w-friends{
-        position: absolute;
-        margin-top: -10rem;
-        margin-left: -40rem;
-
-
-    }
-
-    #sports-w-friends{
-        font-size: 2rem;
-        margin-top: 22rem;
-        margin-left: -35rem;
-        padding-left: 0rem;
-        padding-right: 5rem;
-        width: 29rem;
-    }
-
-
-
-
-
-
-    .about-us{
-        font-size: 4rem
-    }
-
-    .about-us-text{
-        font-size: 2rem;
-        margin-top: 4rem;
-        line-height: 3rem;
-        padding-left: 25rem;
-        padding-right: 25rem;
-    }
-
-
-    .all-staff{
-        width: 50rem;
-        height: 30rem;
-        margin-top: 10rem;
-        background-color: transparent;
-
-    }
+*/
 
 
     
+
     
-    
-    
-
-    .our-menu{
-        font-size: 3rem;
-        
-    }
-
-    #text-menu{
-        font-size: 2rem;
-        padding-left: 25rem;
-        padding-right: 25rem;
-    }
-
-    #subtext-menu{
-        font-size: 2rem;
-        margin-top: -30rem;
-        padding-left: 25rem;
-        padding-right: 25rem;
-    }
-
-
-
-
-    .sports-section{
-        padding-left: 25rem;
-        padding-right: 25rem;
-
-    }
-
-
-    .sports{
-        font-size: 15rem;
-    }
-
-
-    .subtext-sports{
-        font-size: 10rem;
-        margin-left: 2rem;
-    }
-
-
-    .text-sports{
-        font-size: 2rem;
-       
-    }
-
-    .text-calendar{
-        font-size: 2rem;
-      
-    }
-    
-
-    .reservations-section{
-        padding-left: 20rem;
-        padding-right: 20rem;
-
-    }
-
-    .reservations{
-        font-size: 3rem;
-        
-    }
-
-    .subtext-reservations{
-        font-size: 2rem;
-    }
-
-    .reservations-image{
-        width: 40rem;
-        height: 40rem;
-        border-radius: 1rem;
-        float: none;
-        
-    }
-
-    .event-reservations{
-        margin-left: 50rem;
-        margin-top: -35rem;
-        width: 17rem;
-        height: 7rem;
-        font-size: 1.7rem
-    }
-
-
-    .table-reservations{
-        font-size: 1.7rem;
-        margin-top: 10rem;
-        width: 17rem;
-        height: 7rem;
-        margin-left: 50rem;
-
-    }
-
-
-    .button-container{
-        float: right;
-    }
-
-
-
-    .footer-section{
-        width: 100%;
-
-
-    }
-
-    .links ul{
-        justify-content: space-between;
-    }
-
-
-
-
-
-
-
-};
-
-
-
