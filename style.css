@@ -144,6 +144,7 @@ nav .icon {
      letter-spacing: 1px;
      padding: 2rem 1rem 1rem 10rem;
      font-weight: 900;
+     text-shadow: #181818 1px 1px;
     
      
   }
@@ -162,6 +163,7 @@ nav .icon {
     text-align: left;
     margin-top: 2rem;
     padding: 1rem 1rem 1rem 10rem;
+    text-shadow: #181818 1px 1px;
   }
 
   button {
@@ -236,6 +238,7 @@ nav .icon {
   .contact a{
     color: white;
     text-decoration: none;
+    text-shadow: #181818 1px 1px;
   }
   
   .contact a:hover{
@@ -264,7 +267,7 @@ nav .icon {
   }
 
 
-  @media(max-width:768px){
+  /*@media(max-width:768px){
     .icon{
       display: block;
     }
@@ -276,7 +279,7 @@ nav .icon {
 
   
 
-  }
+  }*/
 
 
 
@@ -310,32 +313,47 @@ nav .icon {
 
 
   @media (max-width:768px){
+
     .content h2{
       font-size: 1.5rem;
-      padding: 1rem 1rem 1rem 10rem;
+      padding: 1rem 1rem 1rem 6rem;
 
     } 
 
     .content h2 span{
       font-size: 1.5rem;
+      color: #459ff8;
+
     }
 
     .content p{
       font-size: 1.2rem;
+      padding: 0rem 1rem 1rem 6rem;
     }
 
     button{
       width: 12rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.5s;
+      animation: color 3s infinite ease-in-out;
+      border: 2px solid transparent;
+      padding: 0rem 1rem 1rem 0rem;
     }
-    
+
+   .contact-button{
+     font-size: 1.2rem;
+     padding: 0rem 1rem 0rem 0rem;
+     margin-left: 6.3rem;
+    }
+
     .contact{
       font-size: 1.2rem;
-
-    }
-
+   }
+  
     .image-AI{
       top: 4rem;
-      left: -10%;
+      left: -40%;
     }
 
     .image-AI img{
@@ -346,14 +364,14 @@ nav .icon {
   }
 
 
-  @media (max-width: 435px){
+  @media (max-width: 425px){
 
 
     .content h2{
       font-size: 30px;
-      padding: 1rem 1rem 1rem 5rem;
+      padding: 0rem 1rem 0rem 5rem;
       font-family: 'archivo black', sans-serif;
-      margin-top: -30%;
+      margin-top: -36%;
       text-transform: uppercase;
       
 
@@ -366,18 +384,18 @@ nav .icon {
 
     .content p{
       font-size: 1rem;
-      padding: 1rem 1rem 1rem 5rem;
+      padding: 0rem 1rem 0rem 5rem;
       
     }
 
     .contact-button{
-      margin-left: 2rem;
-      margin-top: -1rem;
+      margin-left: 5rem;
+      margin-top: 1rem;
     }
 
     button{
       width: 10rem;
-      padding: 1rem 1rem 1rem 2rem;
+      padding: 0rem 1rem 0rem 2rem;
     }
 
     .contact{
@@ -401,20 +419,21 @@ nav .icon {
 
   @media (max-width: 375px){
     .content h2{
-      font-size: 18px;
-      padding: 1rem 1rem 1rem 3rem;
+      font-size: 25px;
+      padding: 2rem 1rem 1rem 4rem;
       font-family: 'archivo black', sans-serif;
+      text-shadow: #181818 1px 1px;
 
     } 
 
     .content h2 span{
-      font-size: 18px;
+      font-size: 25px;
     }
 
     .content p{
       font-size: 1rem;
-      padding: 1rem 1rem 1rem 3rem;
-      
+      padding: 0rem 1rem 2rem 4rem;
+      text-shadow: #181818 2px 2px; 
     }
 
     .contact-button{
@@ -424,11 +443,13 @@ nav .icon {
 
     button{
       width: 10rem;
-      padding: 1rem 1rem 1rem 2rem;
+      padding: 2rem 1rem 1rem 2rem;
+      margin-left: 4rem;
     }
 
     .contact{
       font-size: 1rem;
+      text-shadow: #181818 1px 1px;
 
     }
 
