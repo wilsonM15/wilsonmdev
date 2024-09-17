@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=New+Amsterdam&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Teko:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #181818;
+    /*background: linear-gradient(rgb(13, 13, 63), #011222, rgb(12, 12, 53), #011222 100%);*/
+    height: 100dvh;
+    max-width: 100%;
+    position: relative;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  
+  body::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  header {
+    background-color: #181818;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'teko', monospace;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    font-family: 'teko', monospace;
+    font-weight: 100;
+    color: rgb(253, 252, 252);
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #0188ff;
+    color: white;
+}
+
+nav .icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 40%;
+        height: 100dvh;
+        background-color: #181818;
+        position: absolute;
+        top: 11%;
+        left: 60%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav .icon {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    /* Additional styles for smaller screens if needed */
+}
+
+@media (max-width: 320px) {
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+
+  h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .About-container{
+    background-color: #fff;
+    padding: 2rem;
+
+  }
+
+  .contain{
+    background-color: transparent;
+    padding: 1rem;
+    margin: 5rem;
+    border-radius: 10px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+  .main-text{
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    text-align: left;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+.skills{
+  font-size: 8rem;
+  color: #181818;
+  text-align: left;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 0rem 0rem 0rem 6rem ;
+  font-weight: 500;
+  border-radius: 10px;
+  font-family: 'arial, 'Helvetica Neue', Arial, Helvetica, sans-';
+  text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 #fff;
+  font-weight: 700;
+}
+
+
+.text-skills{
+  font-size: 1.7rem;
+  color: black;
+  text-align: left;
+  padding: 2rem 10rem 2rem 14rem;
+  margin: -5rem 5rem 5rem 16rem ;
+  font-family: 'Nunito';
+
+}
+
+.skills-container{
+  color: aliceblue;
+  padding: 2rem 0rem 2rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 2%;
+
+}
+
+
+.html-container{
+  background-color: rgb(7, 84, 185);
+  color: aliceblue;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  border-radius: 10px;
+}
+
+
+.css-container{
+  background-color: rgb(3, 57, 111);
+  color: aliceblue;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  border-radius: 10px;
+}
+
+.js-container{
+  background-color: rgb(22, 108, 171);
+  color: aliceblue;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  border-radius: 10px;
+
+}
+
+.react-container{
+  background-color: rgb(19, 144, 205);
+  color: aliceblue;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  border-radius: 10px;
+}
+
+.figma-container{
+  background-color: rgb(21, 176, 139);
+  color: aliceblue;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  border-radius: 10px;
+}
+
+
+.github-container{
+  background-color: rgb(34, 170, 235);
+  color: aliceblue;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 1024px){
+  .main-text{
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .skills{
+    font-size: 5rem;
+  }
+
+  .text-skills{
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+
+  .About-container{
+    padding: 1rem;
+  }
+
+  .text-skills{
+    padding: 1rem;
+  }
+
+  
+}
+
+@media (max-width: 768px){
+  .main-text{
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+
+
+  .About-container{
+    padding: 0.5rem;
+  }
+
+  .contain{
+    margin: 1rem;
+  }
+
+  .main-text{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0rem;
+    text-align: justify ;
+   
+  }
+
+  .skills{
+    font-size: 4rem;
+    margin: 2rem;
+  }
+
+  .text-skills{
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: -6rem 3rem 2rem 8rem;
+    text-align: justify ;
+  }
+
+  .skills-container{
+    gap: 8%;
+    padding: 1rem;
+  }
+
+  .html-container,
+  .css-container,
+  .js-container,
+  .react-container,
+  .figma-container,
+  .github-container{
+    font-size: 120px;
+    padding: 1rem;
+    width: 20%;
+  }
+}
+
+
+@media (max-width: 435px) {
+  .main-text{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .skills {
+    font-size: 3rem;
+    margin: 1rem 0rem 1rem 2rem;
+    padding: 0.5rem;
+  }
+  
+  .text-skills{
+    margin: -2rem 2rem 1rem 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .skills-container{
+    gap: 5%;
+    padding: 0.5rem;
+  }
+
+
+  .html-container,
+  .css-container,
+  .js-container,
+  .react-container,
+  .figma-container,
+  .github-container{
+    font-size: 120px;
+    padding: 1rem;
+    width: 30%;
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .main-text{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    
+  }
+
+  .skills{
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 2rem;
+    padding: 0.5rem;
+    
+  }
+
+  .text-skills{
+    margin: -2rem 2rem 1rem 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
