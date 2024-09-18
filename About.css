@@ -369,7 +369,7 @@ nav .icon {
 
 @media (max-width: 435px) {
   .main-text{
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.5rem;
   }
   .skills {
@@ -380,7 +380,7 @@ nav .icon {
   
   .text-skills{
     margin: -2rem 2rem 1rem 3rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.5rem;
   }
 
