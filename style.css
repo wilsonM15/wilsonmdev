@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Permanent+Marker&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -19,6 +20,40 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+
+
+/* =================LOADING SCREEN================*/
+/* Fullscreen loading screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020202; /* Neutral background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Styling for the word NUDE */
+.multiple-text {
+  text-align: center;
+  font-family: 'permanent marker', sans-serif; 
+  font-size: 8vw;
+  font-weight: bold;
+  color: #fbfcfd; /* Bright yellow/gold color */
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(7, 111, 146, 0.5);
+  opacity: 1; /* Initially hidden */
+
+}
+
+
+
 
 header {
     background-color: #181818;
@@ -114,9 +149,6 @@ nav .icon {
     }
 }
 
-@media (max-width: 425px) {
-    /* Additional styles for smaller screens if needed */
-}
 
 @media (max-width: 320px) {
     nav ul li a {
@@ -164,6 +196,21 @@ nav .icon {
     margin-top: 2rem;
     padding: 1rem 1rem 1rem 10rem;
     text-shadow: #181818 1px 1px;
+  }
+
+  #description{
+    font-size: 1.5rem;
+    color: #FCFCF7;
+    text-align: left;
+    margin-top: -2rem;
+    padding: 1rem 1rem 1rem 10rem;
+    text-shadow: #181818 1px 1px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
   }
 
   button {
@@ -247,23 +294,18 @@ nav .icon {
 
   }
 
-  .image-AI{
-    display: flex;
-    position: relative;
-    top: 9rem;
-    left: 30%;
-    transform: translateX(-150%);
-    z-index: -2;
-    height: auto;
-    margin-right: -2rem;
-  }
+
 
   .image-AI img{
-    width: 40rem ;
+    display: flex;
+    width: 89vw;
     height: auto;
-    transform: translateX(150%);
-    object-fit:cover;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    object-fit: cover; 
+    margin-bottom: 2rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
   }
 
@@ -284,17 +326,17 @@ nav .icon {
 
 
 
-  @media (min-width:769px){
+ /* @media (min-width:769px){
     .image-AI{
         top: 10rem;
 
     }
 
   }
-
+*/
 
   @media (max-width:1024px){
-    .image-AI{
+   /* .image-AI{
         left: 30%;
         object-fit: cover;
     } 
@@ -302,7 +344,7 @@ nav .icon {
     .image-AI img{
       width: 60rem;
       height: auto;
-    }
+    }*/
 
     .content {
         left: 40%;
@@ -321,7 +363,6 @@ nav .icon {
   @media (max-width:768px){
 
     .content h2{
-    
       font-size: 45px;
       padding: 1rem 1rem 1rem 6rem;
 
@@ -334,9 +375,13 @@ nav .icon {
     }
 
     .content p{
-     
       font-size: 22px;
       padding: 0rem 1rem 1rem 6rem;
+    }
+
+    #description{
+      font-size: 18px;
+      padding: 2rem 1rem 1rem 6rem;
     }
 
     button{
@@ -360,7 +405,7 @@ nav .icon {
       font-size: 1.2rem;
    }
   
-    .image-AI{
+   /* .image-AI{
       left: -20%;
       position: fixed;
     }
@@ -370,7 +415,7 @@ nav .icon {
       height: auto;
       object-fit: cover;
 
-    }
+    }*/
   }
 
 
@@ -381,21 +426,27 @@ nav .icon {
       font-size: 30px;
       padding: 0rem 1rem 0rem 5rem;
       font-family: 'archivo black', sans-serif;
-      margin-top: -36%;
+      margin-top: -10%;
       text-transform: uppercase;
+
       
 
     } 
 
     .content h2 span{
       font-size: 30px;
-      color: rgb(6, 58, 107);
+      color: rgb(9, 125, 233);
     }
 
     .content p{
       font-size: 1rem;
       padding: 0rem 1rem 0rem 5rem;
       
+    }
+
+    #description{
+      font-size: 1rem;
+      padding: 2rem 1rem 0rem 5rem;
     }
 
     .contact-button{
@@ -412,14 +463,15 @@ nav .icon {
 
     }
 
-    .image-AI{
-      top: 1rem;
+   /* .image-AI{
+      top: 7%;
       left: 10%;
-    }
+    }*/
 
     .image-AI img{
-      width: auto;
-      height: 28rem;
+      width: 90vw;
+      height: 90vw;
+    
       
 
     }
@@ -428,9 +480,10 @@ nav .icon {
   @media (max-width: 375px){
     .content h2{
       font-size: 25px;
-      padding: 2rem 1rem 1rem 4rem;
+      padding: 0rem 1rem 1rem 4rem;
       font-family: 'archivo black', sans-serif;
       text-shadow: #181818 1px 1px;
+      margin-top: -20%;
 
     } 
 
@@ -442,6 +495,13 @@ nav .icon {
       font-size: 1rem;
       padding: 0rem 1rem 2rem 4rem;
       text-shadow: #181818 2px 2px; 
+      margin-top: -1vh;
+
+    }
+
+    #description{
+      font-size: 1rem;
+      padding: 2rem 1rem 2rem 4rem;
     }
 
     .contact-button{
@@ -460,7 +520,7 @@ nav .icon {
 
     }
 
-    .image-AI{
+   /* .image-AI{
       top: 2rem;
       left: 70%
     }
@@ -468,15 +528,15 @@ nav .icon {
     .image-AI img{
       width: 20rem;
       transform: translateX(100%);
-  }
+  }*/
 }
 
 
   @media (max-width: 320px){
 
     .content h2{
-      font-size: 24px;
-      padding: 1rem 1rem 1rem 4rem;
+      font-size: 20px;
+      padding: 1rem 1rem 1rem 3rem;
       font-family: 'archivo black', sans-serif;
 
     } 
@@ -486,13 +546,19 @@ nav .icon {
     }
 
     .content p{
-      font-size: 1rem;
-      padding: 1rem 1rem 1rem 4rem;
+      font-size: .91rem;
+      padding: 1rem 1rem 1rem 3rem;
       
+
+    }
+
+    #description{
+      font-size: .9rem;
+      padding: 2rem 1rem 1rem 3rem;
     }
 
     .contact-button{
-      margin-left: -.1rem;
+      margin-left: -1rem;
       margin-top: 1rem;
     }
 
@@ -506,13 +572,13 @@ nav .icon {
 
     }
 
-    .image-AI{
+   /* .image-AI{
       top: 2rem;
       left: 70%;
     }
 
     .image-AI img{
       width: 20rem;
-  }
+  }*/
 
 }
