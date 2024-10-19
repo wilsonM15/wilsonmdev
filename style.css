@@ -179,6 +179,7 @@ nav .icon {
      text-shadow: #181818 1px 1px;
      text-transform: uppercase;
      
+     
   }
 
   .content h2 span{
@@ -363,13 +364,14 @@ nav .icon {
   @media (max-width:768px){
 
     .content h2{
-      font-size: 45px;
+      font-size: 7vw;
       padding: 1rem 1rem 1rem 6rem;
+      margin-top: -20%;
 
     } 
 
     .content h2 span{
-      font-size: 45px;
+      font-size: 7vw;
       color: #459ff8;
 
     }
@@ -409,13 +411,13 @@ nav .icon {
       left: -20%;
       position: fixed;
     }
-
+*/
     .image-AI img{
-      width: 55rem;
+      width: 120vw;
       height: auto;
       object-fit: cover;
 
-    }*/
+    }
   }
 
 
@@ -423,10 +425,10 @@ nav .icon {
 
 
     .content h2{
-      font-size: 30px;
+      font-size: 6vw;
       padding: 0rem 1rem 0rem 5rem;
       font-family: 'archivo black', sans-serif;
-      margin-top: -10%;
+      margin-top: -15%;
       text-transform: uppercase;
 
       
@@ -434,7 +436,7 @@ nav .icon {
     } 
 
     .content h2 span{
-      font-size: 30px;
+      font-size: 6vw;
       color: rgb(9, 125, 233);
     }
 
@@ -538,6 +540,7 @@ nav .icon {
       font-size: 20px;
       padding: 1rem 1rem 1rem 3rem;
       font-family: 'archivo black', sans-serif;
+      margin-top: -35%;
 
     } 
 
