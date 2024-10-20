@@ -115,10 +115,18 @@ nav .icon {
 }
 
 @media (max-width: 425px) {
-    /* Additional styles for smaller screens if needed */
+  nav ul{
+    flex-direction: column;
+    top: 8.5vh;
+  }/* Additional styles for smaller screens if needed */
 }
 
 @media (max-width: 320px) {
+  nav ul{
+    flex-direction: column;
+    top: 8.5vh;
+  }
+
     nav ul li a {
         font-size: 1rem;
     }
@@ -245,6 +253,11 @@ nav .icon {
 
 
   @media (max-width: 375px){
+    nav ul{
+      flex-direction: column;
+      top: 8.5vh;
+    }
+
     .contact-container{
       margin: 1rem 1rem 1rem 1rem;
       align-items: center;
