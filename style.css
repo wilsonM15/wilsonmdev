@@ -210,7 +210,6 @@ nav .icon {
     word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 0.5px;
-    font-family: 'poppins', serif;
     margin-top: 2rem;
 
   }
@@ -296,8 +295,7 @@ nav .icon {
 
   }
 
-
-
+ 
   .image-AI img{
     display: flex;
     width: 89vw;
@@ -423,6 +421,10 @@ nav .icon {
 
 
   @media (max-width: 425px){
+    nav ul{
+      flex-direction: column;
+      top: 9vh;
+    }
 
 
     .content h2{
@@ -473,8 +475,8 @@ nav .icon {
 
     .image-AI img{
      
-      width: 90vw;
-      height: 90vw;
+      width: 100vw;
+      height: 90vh;
     
       
 
@@ -482,6 +484,12 @@ nav .icon {
   }
 
   @media (max-width: 375px){
+
+    nav ul{
+      flex-direction: column;
+      top: 9vh;
+    }
+
     .content h2{
       font-size: 25px;
       padding: 0rem 1rem 1rem 4rem;
@@ -537,6 +545,10 @@ nav .icon {
 
 
   @media (max-width: 320px){
+    nav ul{
+      flex-direction: column;
+      top: 8.5vh;
+    }
 
     .content h2{
       font-size: 20px;
