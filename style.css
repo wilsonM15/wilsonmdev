@@ -194,23 +194,24 @@ nav .icon {
     font-size: 1.5rem;
     color: #FCFCF7;
     text-align: left;
-    margin-top: 2rem;
-    padding: 1rem 1rem 1rem 10rem;
+    margin-top: 0rem;
+    padding: 0rem 1rem 1rem 10rem;
     text-shadow: #181818 1px 1px;
   }
 
   #description{
     font-size: 1.5rem;
-    color: #FCFCF7;
+    color: #f3f3ed;
     text-align: left;
-    margin-top: -2rem;
-    padding: 1rem 1rem 1rem 10rem;
+    margin-top: 0rem;
+    padding: 1rem 0rem 1rem 10rem;
     text-shadow: #181818 1px 1px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
+    font-family: 'poppins', serif;
+    margin-top: 2rem;
 
   }
 
@@ -448,7 +449,8 @@ nav .icon {
 
     #description{
       font-size: 1rem;
-      padding: 2rem 1rem 0rem 5rem;
+      padding: 0rem 1rem 5rem 5rem;
+      margin-top: -.3vh;
     }
 
     .contact-button{
@@ -465,12 +467,12 @@ nav .icon {
 
     }
 
-   /* .image-AI{
-      top: 7%;
-      left: 10%;
-    }*/
+    .image-AI{
+      margin-left: 5%;
+    }
 
     .image-AI img{
+     
       width: 90vw;
       height: 90vw;
     
@@ -503,7 +505,7 @@ nav .icon {
 
     #description{
       font-size: 1rem;
-      padding: 2rem 1rem 2rem 4rem;
+      padding: 0rem 1rem 2rem 4rem;
     }
 
     .contact-button{
@@ -557,7 +559,7 @@ nav .icon {
 
     #description{
       font-size: .9rem;
-      padding: 2rem 1rem 1rem 3rem;
+      padding: 0rem 1rem 1rem 3rem;
     }
 
     .contact-button{
