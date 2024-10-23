@@ -349,13 +349,14 @@ nav .icon {
     
 
   }
-
+ /*----------------------project-5------------------*/
   .project-5 img{
+    display: flex;
     position: relative;
     color: aliceblue;
     padding: 2rem 1rem 2rem 1rem;
-    width: 27%;
-    height: 10%;
+    width: 37vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -364,10 +365,11 @@ nav .icon {
     transform: translateX(35%);
     border-radius: 40px;
     filter: grayscale(0.75);
+    
   }
 
   .project-5:hover img{
-    content: 'Village Run';
+    content: '';
     transform: translate(35%) scale(1.1);
     transition: transform 0.5s ease-in;
     transition: color 0.5s ease;
@@ -581,6 +583,9 @@ nav .icon {
   
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
+
+    .project-5 img { transform: translateX(-1%); width: 46%; }
+    .project-5:hover img { transform: translateX(-15%) scale(1.1); }
   
     /* Common properties for .middle elements */
     .middle-1, .middle-2, .middle-3, .middle-4 {
@@ -597,6 +602,7 @@ nav .icon {
     .middle-2 { top: 50%; left: 75%; }
     .middle-3 { top: 50%; left: 27%; }
     .middle-4 { top: 50%; left: 73%; }
+    .middle-5 { top: 50%; left: 25%; }
   
     .text-project {
       font-size: 1rem;
@@ -659,9 +665,12 @@ nav .icon {
   
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
+
+    .project-5 img { transform: translateX(18%); width: 38%; }
+    .project-5:hover img { transform: translateX(-15%) scale(1.1); }
   
     /* Common properties for .middle elements */
-    .middle-1, .middle-2, .middle-3, .middle-4 {
+    .middle-1, .middle-2, .middle-3, .middle-4, .middle-5{
       transform: translateX(-50%, -50%);
       width: fit-content;
       height: auto;
@@ -676,6 +685,7 @@ nav .icon {
     .middle-2 { top: 50%; left: 73%; }
     .middle-3 { top: 50%; left: 28%; }
     .middle-4 { top: 50%; left: 73%; }
+    .middle-5 { top: 50%; left: 27%; }
   
     .text-project {
       font-size: 1rem;
@@ -739,9 +749,12 @@ nav .icon {
   
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
+
+    .project-5 img { transform: translateX(18%); width: 40%; }
+    .project-5:hover img { transform: translateX(-15%) scale(1.1); }
   
     /* Common properties for .middle elements */
-    .middle-1, .middle-2, .middle-3, .middle-4 {
+    .middle-1, .middle-2, .middle-3, .middle-4, .middle-5 {
       transform: translateX(-50%, -50%);
       width: fit-content;
       height: auto;
@@ -756,6 +769,7 @@ nav .icon {
     .middle-2 { top: 50%; left: 76%; }
     .middle-3 { top: 50%; left: 25%; }
     .middle-4 { top: 50%; left: 73%; }
+    .middle-5 { top: 50%; left: 23%; }
   
     .text-project {
       font-size: 1rem;
