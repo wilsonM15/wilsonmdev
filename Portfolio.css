@@ -584,8 +584,8 @@ nav .icon {
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
 
-    .project-5 img { transform: translateX(1%); width: 43%; }
-    .project-5:hover img { transform: translateX(1%) scale(1.1); }
+    .project-5 img { transform: translateX(2%); width: 43%; }
+    .project-5:hover img { transform: translateX(2%) scale(1.1); }
   
     /* Common properties for .middle elements */
     .middle-1, .middle-2, .middle-3, .middle-4 {
