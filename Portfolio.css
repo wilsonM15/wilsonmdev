@@ -85,6 +85,8 @@ nav .icon {
     font-size: 2rem;
 }
 
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
 
@@ -133,6 +135,98 @@ nav .icon {
     }
 }
 
+.portfolio-contain{
+ align-items:center;
+ justify-content: center;
+}
+
+.portfolio {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.portfolio h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Project Container and Items */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.project {
+  position: relative;
+  width: calc(50% - 0.5rem); /* 2x2 grid layout */
+  aspect-ratio: 1; /* Ensures squares */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #282828;
+  transition: transform 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: grayscale(0.7);
+}
+
+/* Overlay for Hover Text */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.overlay a{
+  text-decoration: none;
+  color: white;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0.3);
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project {
+      width: 100%; /* Stacks squares vertically on smaller screens */
+  }
+}
+
+
+/*
 .portfolio h1{
     font-size: 2rem;
     color: white;
@@ -214,6 +308,7 @@ nav .icon {
     } 
  
 /*-------------------------project-2------------------*/
+ /*
   .project-2 img{
     color: aliceblue;
     padding: 2rem 1rem 2rem 1rem;
@@ -256,7 +351,7 @@ nav .icon {
   }
 
 /*--------------------project 3-------------*/
-
+/*
   .project-3 img{
     position: relative;
     color: aliceblue;
@@ -301,7 +396,7 @@ nav .icon {
 
 
   /*----------------------project-4------------------*/
-
+/*
 
   .project-4 img{
     position: relative;
@@ -349,7 +444,9 @@ nav .icon {
     
 
   }
+  
  /*----------------------project-5------------------*/
+ /*
   .project-5 img{
     display: flex;
     position: relative;
@@ -394,6 +491,11 @@ nav .icon {
   }
 
 
+@media (max-width: 425px) {
+    .middle {
+        font-size: 1rem;
+    }
+}
 
   @media (max-width: 1024px){
     .middle-1{
@@ -419,6 +521,25 @@ nav .icon {
       top: 50%;
       left: 76%;
       width: 20%;
+    }
+
+    .middle-5{
+      padding: .1rem .1rem .1rem .1rem;
+      top: 50%;
+      left: 26%;
+      width: 20%;
+    }
+
+    .project-5 img{
+      width: 27%;
+      left: 5%;
+      height: auto;
+      transform: translateX(20%);
+      filter: grayscale(0.75);
+    }
+
+    .project-5:hover img {
+      transform: translateX(20%);
     }
    
     .text-project a{
@@ -520,6 +641,18 @@ nav .icon {
       transform: translateX(15%);
     }
 
+    .project-5 img{
+      width: 35%;
+      left: 0%;
+      height: 50%;
+      transform: translateX(20%);
+      filter: grayscale(0.75);
+    }
+
+    .project-5:hover img {
+      transform: translateX(20%);
+    }
+
 
     .middle-1{
       top: 50%;
@@ -583,11 +716,24 @@ nav .icon {
   
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
-
+/*
     .project-5 img { transform: translateX(2%); width: 43%; }
     .project-5:hover img { transform: translateX(2%) scale(1.1); }
+*/
+    .project-5 img{
+      width: 40%;
+      left: -1%;
+      height: 50%;
+      transform: translateX(20%);
+      filter: grayscale(0.75);
+    }
+
+    .project-5:hover img {
+      transform: translateX(20%);
+    }
   
     /* Common properties for .middle elements */
+
     .middle-1, .middle-2, .middle-3, .middle-4 {
       transform: translate(-50%, -50%);
       width: fit-content;
@@ -628,13 +774,13 @@ nav .icon {
     } 
   }
 
-
+*/
   @media (max-width: 375px){
     nav ul{
       flex-direction: column;
       top: 8.5vh;
     }
-
+/*
     .projects-container {
       position: relative;
       width: 100%;
@@ -661,7 +807,7 @@ nav .icon {
     .project-2:hover img { transform: translateX(15%) scale(1.1); }
   
     .project-3 img { transform: translateX(-10%); }
-    .project-3:hover img { transform: translateX(-10%) scale(1.1); }
+    .project-3:hover img { transform: translateX(-15%) scale(1.1); }
   
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
@@ -670,6 +816,7 @@ nav .icon {
     .project-5:hover img { transform: translateX(-15%) scale(1.1); }
   
     /* Common properties for .middle elements */
+    
     .middle-1, .middle-2, .middle-3, .middle-4, .middle-5{
       transform: translateX(-50%, -50%);
       width: fit-content;
@@ -712,13 +859,15 @@ nav .icon {
     
   }
 
-
+*/
 
   @media (max-width: 320px){
     nav ul{
       flex-direction: column;
       top: 8.5vh;
     }
+
+    /*
     .projects-container {
       position: relative;
       width: 100%;
@@ -749,11 +898,24 @@ nav .icon {
   
     .project-4 img { transform: translateX(10%); }
     .project-4:hover img { transform: translateX(10%) scale(1.1); }
-
+/*
     .project-5 img { transform: translateX(18%); width: 40%; }
-    .project-5:hover img { transform: translateX(-15%) scale(1.1); }
+    .project-5:hover img { transform: translateX(-15%) scale(1.1); }*/
+
+    .project-5 img{
+      width: 45%;
+      left: -9%;
+      height: 50%;
+      transform: translateX(20%);
+      filter: grayscale(0.75);
+    }
+
+    .project-5:hover img {
+      transform: translateX(20%);
+    }
   
     /* Common properties for .middle elements */
+  
     .middle-1, .middle-2, .middle-3, .middle-4, .middle-5 {
       transform: translateX(-50%, -50%);
       width: fit-content;
