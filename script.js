@@ -39,16 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add event listener to language switcher
   const translations = {
     en: {
-        nav:"About",
-        title: "",
-        description: "Where every sip is an experience, and every moment feels like the best day of summer. We’re not just about great coffee; we serve delicious, healthy food that nourishes your body while delighting your taste buds. Vibrant, fresh, and full of life, NUDE is your charming escape!",
-      
+        fr_text: "I'm Wilson, I'M passionate about creating visually appealing and user-friendly websites",
+        description: "I help businesses grow and expand their online presence",
+        fr_contact: "Contact Me",
+        title:""
     },
     fr: {
-        nav:"À propos",
-        title: "",
-        description: "Bienvenue chez NUDE Coffee Shop – où chaque gorgée est une expérience, et chaque moment ressemble au meilleur jour d'été. Nous ne nous contentons pas de servir un excellent café ; nous proposons une nourriture délicieuse et saine qui nourrit votre corps tout en régalant vos papilles. Dynamique, frais et plein de vie, NUDE est votre charmante escapade !",
-       
+        fr_text: "Je suis Wilson, et je suis passionné par la création de sites web esthétiques et conviviaux.",
+        description: "J'aide les entreprises à se développer et à renforcer leur présence en ligne.",
+        fr_contact: "Contactez-moi",
+        title:"",
     }
 };
 
@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function switchLanguage(lang) {
     // Update both title and description
-    document.getElementById('nav').innerText = translations[lang].nav;
-    document.getElementById('title').innerText = translations[lang].title;
+    
+    document.getElementById('fr_text').innerText = translations[lang].fr_text;
     document.getElementById('description').innerText = translations[lang].description;
-
-
+    document.getElementById('fr_contact').innerText = translations[lang].fr_contact;
+    document.getElementById('title').innerText = translations[lang].title;
 }

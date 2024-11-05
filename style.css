@@ -259,7 +259,13 @@ nav .icon {
   }
      
     
-    
+  .languages li a{
+    color: rgb(7, 156, 226);
+    text-decoration: none;
+    text-shadow: #181818 1px 1px;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
 
     
     
