@@ -155,6 +155,9 @@ nav .icon {
 .overlay a{
   text-decoration: none;
   color: white;
+  font-size:small;
+  text-align: left;
+  width: 350px; 
 }
 
 .project:hover img {
